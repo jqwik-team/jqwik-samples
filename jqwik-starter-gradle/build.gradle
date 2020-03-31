@@ -1,5 +1,9 @@
+plugins {
+	id 'java'
+}
+
 repositories {
-    mavenCentral()
+	mavenCentral()
 }
 
 ext {
@@ -9,41 +13,38 @@ ext {
 	jqwikVersion = '1.2.6'
 }
 
-apply plugin: 'java'
-apply plugin: 'idea'
-
 java {
-  sourceCompatibility = JavaVersion.VERSION_1_8
-  targetCompatibility = JavaVersion.VERSION_1_8
+	sourceCompatibility = JavaVersion.VERSION_1_8
+	targetCompatibility = JavaVersion.VERSION_1_8
 }
 
 compileTestJava {
-  options.compilerArgs += '-parameters'
-  options.encoding = 'UTF-8'
+	options.compilerArgs += '-parameters'
+	options.encoding = 'UTF-8'
 }
 
 test {
-  useJUnitPlatform()
+	useJUnitPlatform()
 
-  // To allow other naming conventions
-  include '**/*Properties.class'
-  include '**/*Examples.class'
-  include '**/*Test.class'
-  include '**/*Tests.class'
+	// To allow other naming conventions
+	include '**/*Properties.class'
+	include '**/*Examples.class'
+	include '**/*Test.class'
+	include '**/*Tests.class'
 }
 
 dependencies {
-  testImplementation("net.jqwik:jqwik:${jqwikVersion}")
+	testImplementation("net.jqwik:jqwik:${jqwikVersion}")
 
-  // Fluent assertions library
-  testImplementation("org.assertj:assertj-core:${assertJVersion}")
+	// Fluent assertions library. You can use any other assertions instead.
+	testImplementation("org.assertj:assertj-core:${assertJVersion}")
 
-  // To work around IntelliJ bug to not provide run test decorator
+	// To work around IntelliJ bug to not provide run test decorator
 	// https://youtrack.jetbrains.com/issue/IDEA-231482
-  testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitJupiterVersion}")
+	testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitJupiterVersion}")
 }
 
 wrapper {
-  description = 'Generates gradlew[.bat] scripts'
-  gradleVersion = '6.3'
+	description = 'Generates gradlew[.bat] scripts'
+	gradleVersion = '6.3'
 }
