@@ -7,8 +7,6 @@ Simple examples of how to use [jqwik](https://jqwik.net) with Gradle
 - In IDE of your choice that has JUnit5 platform support, e.g. IntelliJ IDEA.
 - Using gradle: `./gradlew test`
 
-Currently _2 tests are supposed fail_!
-
 ## Configuration
 
 Jqwik's

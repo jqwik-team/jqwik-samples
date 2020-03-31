@@ -27,6 +27,7 @@ test {
 
   // To allow other naming conventions
   include '**/*Properties.class'
+  include '**/*Examples.class'
   include '**/*Test.class'
   include '**/*Tests.class'
 }
