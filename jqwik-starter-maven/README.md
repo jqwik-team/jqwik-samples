@@ -1,6 +1,6 @@
-# jqwik-starter-gradle
+# jqwik-starter-maven
 
-Simple examples of how to use [jqwik](https://jqwik.net) with Gradle.
+Simple examples of how to use [jqwik](https://jqwik.net) with Maven.
 
 It also uses [AssertJ](https://joel-costigliola.github.io/assertj/) but any
 Assertion library (including JUnit Jupiter) will do.
@@ -8,7 +8,7 @@ Assertion library (including JUnit Jupiter) will do.
 ## Running tests
 
 - In IDE of your choice that has JUnit5 platform support, e.g. IntelliJ IDEA.
-- Using gradle: `./gradlew test`
+- Using gradle: `mvn test`
 
 ## Configuration
 
