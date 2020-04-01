@@ -1,9 +1,6 @@
-# jqwik-starter-gradle
+# jqwik-spring-boot-gradle
 
-Simple examples of how to use [jqwik](https://jqwik.net) with Gradle.
-
-It also uses [AssertJ](https://joel-costigliola.github.io/assertj/) but any
-Assertion library (including JUnit Jupiter) will do.
+Simple examples of how to use [jqwik](https://jqwik.net) with Gradle for a Spring Boot Application.
 
 ## Running tests
 

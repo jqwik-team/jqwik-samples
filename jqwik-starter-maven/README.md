@@ -14,6 +14,6 @@ Assertion library (including JUnit Jupiter) will do.
 
 Jqwik's
 [configuration file](https://jqwik.net/docs/current/user-guide.html#jqwik-configuration)
-is located in `/src/test/java/resources/jqwik.properties`
+is located in `/src/test/resources/jqwik.properties`
 
 You probably want to add the database name to your `.gitignore` file.

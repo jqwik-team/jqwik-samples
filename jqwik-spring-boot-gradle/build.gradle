@@ -1,0 +1,58 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.6.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+}
+
+ext {
+	junitJupiterVersion = '5.6.0'
+	jqwikSpringVersion = '0.5.0'
+	assertJVersion = '3.15.0'
+	mockitoVersion = '3.3.3'
+}
+
+ext['mockito.version'] = "${mockitoVersion}"
+ext['assertj.version'] = "${assertJVersion}"
+ext['junit-jupiter.version'] = "${junitJupiterVersion}"
+
+group = 'my.example'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+	mavenCentral()
+}
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_1_8
+	targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+compileTestJava {
+	options.compilerArgs += '-parameters'
+	options.encoding = 'UTF-8'
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+
+	testImplementation("net.jqwik:jqwik-spring:${jqwikSpringVersion}")
+}
+
+test {
+	useJUnitPlatform()
+
+	include '**/*Properties.class'
+	include '**/*Test.class'
+	include '**/*Tests.class'
+
+	// testLogging.showStandardStreams = true
+}
+
+wrapper {
+	description = 'Generates gradlew[.bat] scripts'
+	gradleVersion = '6.3'
+}
