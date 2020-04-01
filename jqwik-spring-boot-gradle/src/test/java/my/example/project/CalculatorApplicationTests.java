@@ -1,9 +1,7 @@
 package my.example.project;
 
 import net.jqwik.api.*;
-import net.jqwik.api.lifecycle.*;
 import net.jqwik.spring.*;
-import net.jqwik.spring.boot.*;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.boot.test.autoconfigure.web.servlet.*;
 import org.springframework.boot.test.context.*;
@@ -13,16 +11,11 @@ import org.springframework.test.web.servlet.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-//@JqwikSpringBootTest(
-//		webEnvironment = SpringBootTest.WebEnvironment.MOCK,
-//		classes = CalculatorApplication.class
-//)
+@JqwikSpringSupport
 @SpringBootTest(
-		webEnvironment = SpringBootTest.WebEnvironment.MOCK,
-		classes = CalculatorApplication.class
+		webEnvironment = SpringBootTest.WebEnvironment.MOCK
 )
 @AutoConfigureMockMvc
-@AddLifecycleHook(JqwikSpringExtension.class)
 class CalculatorApplicationTests {
 
 	@Autowired
