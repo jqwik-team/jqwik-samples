@@ -7,8 +7,8 @@ plugins {
 }
 
 ext {
-	junitJupiterVersion = '5.6.0'
-	jqwikSpringVersion = '0.6.0-SNAPSHOT'
+	junitJupiterVersion = '5.6.1'
+	jqwikSpringVersion = '0.6.0'
 	assertJVersion = '3.15.0'
 	mockitoVersion = '3.3.3'
 }
