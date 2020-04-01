@@ -17,7 +17,7 @@ The [jqwik-starter-maven] demonstrates how to use jqwik with Maven.
 
 ### jqwik with Spring Boot
 
-The [jqwik-spring-boot-gradles] demonstrates how to use jqwik in a Spring Boot project.
+The [jqwik-spring-boot-gradle] demonstrates how to use jqwik in a Spring Boot project.
 
 
 [jqwik-starter-gradle]: jqwik-starter-gradle
