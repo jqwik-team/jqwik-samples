@@ -7,10 +7,10 @@ repositories {
 }
 
 ext {
-	junitPlatformVersion = '1.6.1'
-	junitJupiterVersion = '5.6.1'
+	junitPlatformVersion = '1.6.2'
+	junitJupiterVersion = '5.6.2'
 	assertJVersion = '3.15.0'
-	jqwikVersion = '1.2.6'
+	jqwikVersion = '1.2.7'
 }
 
 java {
