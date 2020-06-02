@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.*;
 
 @SpringBootApplication
 @RestController
-public class CalculatorApplication {
+public class HelloWorldApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CalculatorApplication.class, args);
+		SpringApplication.run(HelloWorldApplication.class, args);
 	}
 
 	@GetMapping("/hello")
