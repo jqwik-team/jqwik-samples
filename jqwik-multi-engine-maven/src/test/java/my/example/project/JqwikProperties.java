@@ -1,8 +1,6 @@
 package my.example.project;
 
-import net.jqwik.api.ForAll;
-import net.jqwik.api.Label;
-import net.jqwik.api.Property;
+import net.jqwik.api.*;
 
 public class JqwikProperties {
   @Property(tries = 10)
