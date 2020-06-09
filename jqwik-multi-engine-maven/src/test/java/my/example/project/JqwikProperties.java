@@ -2,10 +2,9 @@ package my.example.project;
 
 import net.jqwik.api.*;
 
-public class JqwikProperties {
-  @Property(tries = 10)
-  @Label("my jqwik property")
-  boolean test(@ForAll int i) {
+class JqwikProperties {
+  @Property
+  boolean my_jqwik_property(@ForAll int i) {
     return true;
   }
 }

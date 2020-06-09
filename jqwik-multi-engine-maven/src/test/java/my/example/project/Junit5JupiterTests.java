@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-public class Junit5Tests {
+class Junit5JupiterTests {
   @Test
   void test() {
     assertEquals(3, 2 + 1);
