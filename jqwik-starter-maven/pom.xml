@@ -36,6 +36,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
+                    <!-- required if you want to report source code names of property method parameters -->
                     <compilerArgs>
                         <arg>-parameters</arg>
                     </compilerArgs>
