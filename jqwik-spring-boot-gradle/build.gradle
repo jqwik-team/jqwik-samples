@@ -11,7 +11,7 @@ plugins {
 
 ext {
 	junitJupiterVersion = '5.7.2'
-	jqwikSpringVersion = '0.7.0'
+	jqwikSpringVersion = '0.8.0'
 	assertJVersion = '3.15.0'
 	mockitoVersion = '3.3.3'
 }
@@ -48,7 +48,7 @@ dependencies {
 	testImplementation("net.jqwik:jqwik-spring:${jqwikSpringVersion}")
 
 	// Only add if you want a different jqwik version than what's included with jqwik-spring:
-	testImplementation("net.jqwik:jqwik:1.5.3")
+	// testImplementation("net.jqwik:jqwik:1.5.3")
 }
 
 test {
