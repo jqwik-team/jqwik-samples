@@ -12,6 +12,7 @@ JUnit 4 and JUnit 5 Jupiter using Maven.
 
 Jqwik's
 [configuration file](https://jqwik.net/docs/current/user-guide.html#jqwik-configuration)
-is located in `/src/test/resources/jqwik.properties`
+is located in `/src/test/resources/junit-platform.properties`
 
-You probably want to add the database name to your `.gitignore` file.
+You probably want to add the database name (default is `jqwik-database`)
+to your `.gitignore` file.
