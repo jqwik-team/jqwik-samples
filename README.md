@@ -12,6 +12,10 @@ The [jqwik-starter-gradle] project demonstrates how to use jqwik with Gradle.
 
 The [jqwik-starter-maven] project demonstrates how to use jqwik with Maven.
 
+### jqwik with Bach
+
+The [jqwik-starter-Bach] project demonstrates how to use jqwik with Bach.
+
 ## Other jqwik Samples
 
 ### jqwik with Spring Boot with Gradle
