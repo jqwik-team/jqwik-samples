@@ -26,8 +26,8 @@ class build {
 
     static String locate(String module) {
         return switch (module) {
-            case "net.jqwik.api" -> "https://oss.sonatype.org/content/repositories/snapshots/net/jqwik/jqwik-api/1.6.0-SNAPSHOT/jqwik-api-1.6.0-20211028.081012-29.jar";
-            case "net.jqwik.engine" -> "https://oss.sonatype.org/content/repositories/snapshots/net/jqwik/jqwik-engine/1.6.0-SNAPSHOT/jqwik-engine-1.6.0-20211028.081012-27.jar";
+            case "net.jqwik.api" -> "https://oss.sonatype.org/content/repositories/snapshots/net/jqwik/jqwik-api/1.6.0-SNAPSHOT/jqwik-api-1.6.0-20211029.102123-35.jar";
+            case "net.jqwik.engine" -> "https://oss.sonatype.org/content/repositories/snapshots/net/jqwik/jqwik-engine/1.6.0-SNAPSHOT/jqwik-engine-1.6.0-20211029.102123-33.jar";
             case "org.assertj.core" -> Maven.central("org.assertj", "assertj-core", ASSERTJ_VERSION);
             default -> null;
         };
