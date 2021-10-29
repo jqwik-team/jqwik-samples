@@ -14,7 +14,8 @@ The [jqwik-starter-maven] project demonstrates how to use jqwik with Maven.
 
 ### jqwik with Bach
 
-The [jqwik-starter-Bach] project demonstrates how to use jqwik with Bach.
+The [jqwik-starter-Bach] project demonstrates how to use jqwik with Bach
+within Java's module system aka Jigsaw.
 
 ## Other jqwik Samples
 
