@@ -13,3 +13,7 @@ popd
 pushd jqwik-multi-engine-maven
 mvn clean verify
 popd
+
+pushd jqwik-starter-bach
+.bach/bin/bach build
+popd
