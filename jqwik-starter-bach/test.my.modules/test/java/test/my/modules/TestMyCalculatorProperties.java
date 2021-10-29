@@ -5,7 +5,7 @@ import net.jqwik.api.*;
 import net.jqwik.api.constraints.*;
 import org.assertj.core.api.*;
 
-class MyCalculatorProperties {
+class TestMyCalculatorProperties {
 
 	@Property
 	boolean sumsOfSmallPositivesAreAlwaysPositive(@ForAll @Size(min = 1, max = 10) @IntRange(min = 1, max = 1000) int[] addends) {
