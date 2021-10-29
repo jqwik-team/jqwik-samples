@@ -4,7 +4,7 @@ import my.example.project.*;
 import net.jqwik.api.*;
 import org.assertj.core.api.*;
 
-class MyCalculatorExamples {
+class TestMyCalculatorExamples {
 
 	@Example
 	void summingUpZeros() {
