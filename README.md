@@ -16,6 +16,10 @@ The [jqwik-starter-gradle-kotlin] project demonstrates how to use jqwik with Gra
 
 The [jqwik-starter-maven] project demonstrates how to use jqwik with Maven.
 
+### jqwik with Maven and Kotlin
+
+The [jqwik-starter-maven-kotlin] project demonstrates how to use jqwik with Maven and Kotlin.
+
 ### jqwik with Bach
 
 The [jqwik-starter-bach] project demonstrates how to use jqwik with Bach
@@ -36,6 +40,7 @@ and JUnit 5 Jupiter in a single Maven project.
 [jqwik-starter-gradle]: jqwik-starter-gradle
 [jqwik-starter-gradle-kotlin]: jqwik-starter-gradle-kotlin
 [jqwik-starter-maven]: jqwik-starter-maven
+[jqwik-starter-maven-kotlin]: jqwik-starter-maven-kotlin
 [jqwik-starter-bach]: jqwik-starter-bach
 [jqwik-multi-engine-maven]: jqwik-multi-engine-maven
 [jqwik-spring-boot-gradle]: jqwik-spring-boot-gradle
