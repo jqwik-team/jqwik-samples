@@ -1,0 +1,90 @@
+buildscript {
+    ext.kotlin_version = "1.5.31"
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+repositories {
+    google()
+    mavenCentral()
+    // Only necessary if you use jqwik's SNAPSHOT releases
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots'
+    }
+}
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "my.example.project.android"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        freeCompilerArgs = [
+                "-Xjsr305=strict", // Strict interpretation of nullability annotations in jqwik API
+                "-Xemit-jvm-type-annotations" // Enable annotations on type variables
+        ]
+        jvmTarget = '1.8'
+        javaParameters = true // Get correct parameter names in jqwik reporting
+    }
+
+    testOptions {
+        unitTests.all {
+            useJUnitPlatform {
+                includeEngines 'jqwik'
+            }
+            include '**/*Properties.class'
+            include '**/*Test.class'
+            include '**/*Tests.class'
+            include '**/*Examples.class'
+        }
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+
+    testImplementation "com.google.truth:truth:1.1.3"
+
+//    testImplementation 'junit:junit:4.13.2'
+//    testImplementation "org.junit.jupiter:junit-jupiter-api:5.7.1"
+//    testImplementation "org.junit.jupiter:junit-jupiter-params:5.7.1"
+//    testRuntimeOnly "org.junit.vintage:junit-vintage-engine:5.7.1"
+
+    testImplementation("net.jqwik:jqwik:1.6.0-SNAPSHOT")
+    testImplementation("net.jqwik:jqwik-kotlin:1.6.0-SNAPSHOT")
+}
+
+wrapper {
+    gradleVersion = "7.2"
+}
