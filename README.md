@@ -12,6 +12,10 @@ The [jqwik-starter-gradle] project demonstrates how to use jqwik with Gradle.
 
 The [jqwik-starter-gradle-kotlin] project demonstrates how to use jqwik with Gradle and Kotlin
 
+### jqwik for Android with Gradle and Kotlin
+
+The [jqwik-starter-gradle-android] project demonstrates how to use jqwik in an Android project with Gradle and Kotlin
+
 ### jqwik with Maven
 
 The [jqwik-starter-maven] project demonstrates how to use jqwik with Maven.
@@ -39,6 +43,7 @@ and JUnit 5 Jupiter in a single Maven project.
 
 [jqwik-starter-gradle]: jqwik-starter-gradle
 [jqwik-starter-gradle-kotlin]: jqwik-starter-gradle-kotlin
+[jqwik-starter-gradle-android]: jqwik-starter-gradle-android
 [jqwik-starter-maven]: jqwik-starter-maven
 [jqwik-starter-maven-kotlin]: jqwik-starter-maven-kotlin
 [jqwik-starter-bach]: jqwik-starter-bach
