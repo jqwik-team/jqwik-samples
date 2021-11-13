@@ -6,6 +6,10 @@ pushd jqwik-starter-gradle-kotlin
 ./gradlew clean test
 popd
 
+pushd jqwik-starter-gradle-android
+./gradlew clean test
+popd
+
 pushd jqwik-spring-boot-gradle
 ./gradlew clean test
 popd

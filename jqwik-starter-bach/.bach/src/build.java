@@ -5,7 +5,7 @@ import com.github.sormuras.bach.simple.SimpleSpace;
 
 class build {
 
-    static final String JUNIT_VERSION = "5.8.1", JQWIK_VERSION = "1.6.0-SNAPSHOT", ASSERTJ_VERSION = "3.21.0";
+    static final String JUNIT_VERSION = "5.8.1", JQWIK_VERSION = "1.6.0", ASSERTJ_VERSION = "3.21.0";
 
     public static void main(String... args) {
         try (var bach = new Bach(args)) {
@@ -26,8 +26,8 @@ class build {
 
     static String locate(String module) {
         return switch (module) {
-            case "net.jqwik.api" -> "https://oss.sonatype.org/content/repositories/snapshots/net/jqwik/jqwik-api/1.6.0-SNAPSHOT/jqwik-api-1.6.0-20211105.114510-41.jar";
-            case "net.jqwik.engine" -> "https://oss.sonatype.org/content/repositories/snapshots/net/jqwik/jqwik-engine/1.6.0-SNAPSHOT/jqwik-engine-1.6.0-20211105.114510-39.jar";
+            case "net.jqwik.api" -> Maven.central("net.jqwik", "jqwik-api", JQWIK_VERSION);
+            case "net.jqwik.engine" -> Maven.central("net.jqwik", "jqwik-engine", JQWIK_VERSION);
             case "org.assertj.core" -> Maven.central("org.assertj", "assertj-core", ASSERTJ_VERSION);
             default -> null;
         };

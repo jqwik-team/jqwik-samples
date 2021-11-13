@@ -6,15 +6,15 @@ plugins {
 
 repositories {
     mavenCentral()
-    // Only necessary if you use jqwik's SNAPSHOT releases
-    maven(url = "https://oss.sonatype.org/content/repositories/snapshots")
+    // Only necessary if you use jqwik's SNAPSHOT releases:
+    // maven(url = "https://oss.sonatype.org/content/repositories/snapshots")
 }
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
 
-    testImplementation("net.jqwik:jqwik:1.6.0-SNAPSHOT")
-    testImplementation("net.jqwik:jqwik-kotlin:1.6.0-SNAPSHOT")
+    testImplementation("net.jqwik:jqwik:1.6.0")
+    testImplementation("net.jqwik:jqwik-kotlin:1.6.0")
     testImplementation("org.assertj:assertj-core:3.21.0")
 }
 
