@@ -2,6 +2,8 @@
 
 Simple examples of how to use [jqwik](https://jqwik.net) with Gradle, Android and Kotlin.
 
+Mind that jqwik only works with a full-blown JDK and not with an Android Runtime.
+
 ## Running tests
 
 - In IDE of your choice that has JUnit5 platform support, e.g. IntelliJ IDEA.
@@ -17,4 +19,3 @@ You also have to set up your local Android SDK and configure it in a `local.prop
 
 You probably want to add the database name (default is `jqwik-database`)
 to your `.gitignore` file.
-

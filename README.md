@@ -1,6 +1,6 @@
 # jqwik Samples
 
-A collection of sample projects for using [jqwik](https://jqwik.net)
+A collection of sample projects for using [jqwik](https://jqwik.net).
 
 ## jqwik Starter Samples
 
@@ -10,11 +10,11 @@ The [jqwik-starter-gradle] project demonstrates how to use jqwik with Gradle.
 
 ### jqwik with Gradle and Kotlin
 
-The [jqwik-starter-gradle-kotlin] project demonstrates how to use jqwik with Gradle and Kotlin
+The [jqwik-starter-gradle-kotlin] project demonstrates how to use jqwik with Gradle and Kotlin.
 
 ### jqwik for Android with Gradle and Kotlin
 
-The [jqwik-starter-gradle-android] project demonstrates how to use jqwik in an Android project with Gradle and Kotlin
+The [jqwik-starter-gradle-android] project demonstrates how to use jqwik in an Android project with Gradle and Kotlin.
 
 ### jqwik with Maven
 
