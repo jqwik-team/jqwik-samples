@@ -1,5 +1,5 @@
-package my.example.project.android
+package my.example.project
 
 class MyCalculator {
-    fun sum(vararg addends: Int): Int = addends.sum()
+    fun sum(addends: List<Int>): Int = addends.sum()
 }

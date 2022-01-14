@@ -5,7 +5,7 @@ import com.github.sormuras.bach.simple.SimpleSpace;
 
 class build {
 
-    static final String JUNIT_VERSION = "5.8.1", JQWIK_VERSION = "1.6.0", ASSERTJ_VERSION = "3.21.0";
+    static final String JUNIT_VERSION = "5.8.2", JQWIK_VERSION = "1.6.3", ASSERTJ_VERSION = "3.22.0";
 
     public static void main(String... args) {
         try (var bach = new Bach(args)) {
