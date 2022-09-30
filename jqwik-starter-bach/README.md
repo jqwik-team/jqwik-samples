@@ -1,6 +1,8 @@
 # JQWIK Starter with Bach
 
-From https://sormuras.github.io/bach/:
+_No longer works with latest Bach version_.
+
+From https://github.com/sormuras/bach-init:
 
 > Bach is a lightweight Java build tool that orchestrates JDK tools for building modular Java projects.
 

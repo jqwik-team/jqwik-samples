@@ -6,9 +6,9 @@ pushd jqwik-starter-gradle-kotlin
 ./gradlew clean test
 popd
 
-pushd jqwik-starter-gradle-android
-./gradlew clean test
-popd
+#pushd jqwik-starter-gradle-android
+#./gradlew clean test
+#popd
 
 pushd jqwik-spring-boot-gradle
 ./gradlew clean test
@@ -22,6 +22,6 @@ pushd jqwik-multi-engine-maven
 mvn clean verify
 popd
 
-pushd jqwik-starter-bach
-.bach/bin/bach build
-popd
+#pushd jqwik-starter-bach
+#.bach/bin/bach build
+#popd

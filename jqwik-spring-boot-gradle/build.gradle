@@ -10,10 +10,10 @@ plugins {
 }
 
 ext {
-	junitJupiterVersion = '5.8.2'
+	junitJupiterVersion = '5.9.1'
 	jqwikSpringVersion = '0.9.0'
-	assertJVersion = '3.22.0'
-	mockitoVersion = '4.2.0'
+	assertJVersion = '3.23.1'
+	mockitoVersion = '4.4.0' // More recent versions seem not to work
 }
 
 ext['mockito.version'] = "${mockitoVersion}"
@@ -48,7 +48,7 @@ dependencies {
 	testImplementation("net.jqwik:jqwik-spring:${jqwikSpringVersion}")
 
 	// Only add if you want a different jqwik version than what's included with jqwik-spring:
-	// testImplementation("net.jqwik:jqwik:1.5.6")
+	// testImplementation("net.jqwik:jqwik:1.7.0")
 }
 
 test {
@@ -62,5 +62,5 @@ test {
 }
 
 wrapper {
-	gradleVersion = '7.3.3'
+	gradleVersion = '7.5.1'
 }

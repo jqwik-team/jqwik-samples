@@ -29,6 +29,8 @@ The [jqwik-starter-maven-kotlin] project demonstrates how to use jqwik with Mave
 The [jqwik-starter-bach] project demonstrates how to use jqwik with Bach
 within Java's module system aka Jigsaw.
 
+_No longer works with latest Bach version._
+
 ## Other jqwik Samples
 
 ### jqwik with Spring Boot with Gradle
