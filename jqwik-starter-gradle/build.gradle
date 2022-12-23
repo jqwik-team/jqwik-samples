@@ -10,7 +10,7 @@ ext {
 	junitPlatformVersion = '1.9.1'
 	junitJupiterVersion = '5.9.1'
 	assertJVersion = '3.23.1'
-	jqwikVersion = '1.7.0'
+	jqwikVersion = '1.7.1'
 }
 
 java {
@@ -38,8 +38,11 @@ dependencies {
 
 	// Fluent assertions library. You can use any other assertions instead.
 	testImplementation("org.assertj:assertj-core:${assertJVersion}")
+
+	// Optional but recommended to get annotation related API warnings, e.g. for @CheckReturnValue
+	compileOnly("org.jetbrains:annotations:23.0.0")
 }
 
 wrapper {
-	gradleVersion = '7.5.1'
+	gradleVersion = '7.6'
 }

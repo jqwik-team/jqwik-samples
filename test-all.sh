@@ -18,6 +18,10 @@ pushd jqwik-starter-maven
 mvn clean verify
 popd
 
+pushd jqwik-starter-maven-kotlin
+mvn clean verify
+popd
+
 pushd jqwik-multi-engine-maven
 mvn clean verify
 popd
