@@ -1,0 +1,38 @@
+plugins {
+    id("com.github.johnrengelman.shadow") version "7.1.2"
+    id("io.micronaut.application") version "3.7.10"
+}
+
+version = "0.1"
+group = "net.jqwik"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation('net.jqwik:jqwik-micronaut:1.0.0')
+    testImplementation('net.jqwik:jqwik-micronaut:1.0.0')
+    testImplementation 'org.assertj:assertj-core:3.24.2'
+    runtimeOnly("ch.qos.logback:logback-classic")
+}
+
+application {
+    mainClass.set("net.jqwik.Application")
+}
+java {
+    sourceCompatibility = JavaVersion.toVersion("1.8")
+    targetCompatibility = JavaVersion.toVersion("1.8")
+}
+
+micronaut {
+    runtime("netty")
+    testRuntime("junit5")
+    processing {
+        incremental(true)
+        annotations("net.jqwik.*")
+    }
+}
+
+
+
