@@ -34,5 +34,8 @@ micronaut {
     }
 }
 
+wrapper {
+    gradleVersion = '8.2'
+}
 
 

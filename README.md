@@ -37,6 +37,15 @@ _No longer works with latest Bach version._
 
 The [jqwik-spring-boot-gradle] project demonstrates how to use jqwik in a Spring Boot project.
 
+### jqwik with Micronaut with Gradle
+
+The [jqwik-micronaut-gradle] project demonstrates how to use jqwik in a Micronaut project.
+
+### jqwik with Micronaut with Maven
+
+The [jqwik-micronaut-maven] project demonstrates how to use jqwik in a Micronaut project
+using Maven.
+
 ### Multi Engine Project with Maven
 
 The [jqwik-multi-engine-maven] project demonstrates how to use jqwik, JUnit 4
@@ -51,3 +60,5 @@ and JUnit 5 Jupiter in a single Maven project.
 [jqwik-starter-bach]: jqwik-starter-bach
 [jqwik-multi-engine-maven]: jqwik-multi-engine-maven
 [jqwik-spring-boot-gradle]: jqwik-spring-boot-gradle
+[jqwik-micronaut-gradle]: jqwik-micronaut-gradle
+[jqwik-micronaut-maven]: jqwik-micronaut-maven

@@ -17,5 +17,5 @@ is located in `/src/test/resources/junit-platform.properties`
 
 You also have to set up your local Android SDK and configure it in a `local.properties` file.
 
-You probably want to add the database name (default is `jqwik-database`)
+You probably want to add the database name (default is `.jqwik-database`)
 to your `.gitignore` file.
