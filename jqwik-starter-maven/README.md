@@ -8,7 +8,7 @@ Assertion library (including JUnit Jupiter) will do.
 ## Running tests
 
 - In IDE of your choice that has JUnit5 platform support, e.g. IntelliJ IDEA.
-- Using gradle: `mvn test`
+- Using maven: `mvn test`
 
 ## Configuration
 
