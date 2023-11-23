@@ -1,12 +1,13 @@
 plugins {
-	id 'org.springframework.boot' version '2.7.17' // At least 2.7. for Gradle 8 support
-	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'org.springframework.boot' version '3.1.5' // At least 2.7. for Gradle 8 support
+	id 'io.spring.dependency-management' version '1.1.4'
 	id 'java'
 }
 
 ext {
-	junitJupiterVersion = '5.10.0'
-	jqwikSpringVersion = '0.9.0'
+	junitPlatformVersion = '1.10.1'
+	junitJupiterVersion = '5.10.1'
+	jqwikSpringVersion = '0.11.0'
 	assertJVersion = '3.24.2'
 	mockitoVersion = '4.11.0'
 }
@@ -24,8 +25,8 @@ repositories {
 }
 
 java {
-	sourceCompatibility = JavaVersion.VERSION_1_8
-	targetCompatibility = JavaVersion.VERSION_1_8
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
 }
 
 compileTestJava {
@@ -41,13 +42,14 @@ dependencies {
 	}
 
 	testImplementation("org.junit.jupiter:junit-jupiter:${junitJupiterVersion}")
+	testRuntimeOnly("org.junit.platform:junit-platform-launcher:${junitPlatformVersion}")
 	testImplementation("net.jqwik:jqwik-spring:${jqwikSpringVersion}")
 
 	// Only add if you want a different jqwik version than what's included with jqwik-spring:
 	// testImplementation("net.jqwik:jqwik:1.8.2")
 
 	// Optional but recommended to get annotation related API warnings, e.g. for @CheckReturnValue
-	compileOnly("org.jetbrains:annotations:23.0.0")
+	compileOnly('org.jetbrains:annotations:24.0.1')
 
 }
 
