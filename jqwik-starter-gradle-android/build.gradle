@@ -81,13 +81,13 @@ dependencies {
 //    testImplementation "org.junit.jupiter:junit-jupiter-params:5.9.1"
 //    testRuntimeOnly "org.junit.vintage:junit-vintage-engine:5.9.1"
 
-    testImplementation("net.jqwik:jqwik:1.7.1")
-    testImplementation("net.jqwik:jqwik-kotlin:1.7.1")
+    testImplementation("net.jqwik:jqwik:1.8.2")
+    testImplementation("net.jqwik:jqwik-kotlin:1.8.2")
 
     // Optional but recommended to get annotation related API warnings, e.g. for @CheckReturnValue
     compileOnly("org.jetbrains:annotations:23.0.0")
 }
 
 wrapper {
-    gradleVersion = "7.6"
+    gradleVersion = "8.4"
 }

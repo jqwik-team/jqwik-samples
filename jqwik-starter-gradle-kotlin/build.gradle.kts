@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.7.20"
+    kotlin("jvm") version "1.9.10"
 }
 
 repositories {
@@ -13,9 +13,9 @@ repositories {
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
 
-    testImplementation("net.jqwik:jqwik:1.7.1")
-    testImplementation("net.jqwik:jqwik-kotlin:1.7.1")
-    testImplementation("org.assertj:assertj-core:3.23.1")
+    testImplementation("net.jqwik:jqwik:1.8.2")
+    testImplementation("net.jqwik:jqwik-kotlin:1.8.2")
+    testImplementation("org.assertj:assertj-core:3.24.2")
 
     // Optional but recommended to get annotation related API warnings, e.g. for @CheckReturnValue
     compileOnly("org.jetbrains:annotations:23.0.0")
@@ -37,11 +37,11 @@ tasks.withType<KotlinCompile> {
 		  "-Xjsr305=strict", // Strict interpretation of nullability annotations in jqwik API
 		  "-Xemit-jvm-type-annotations" // Enable nnotations on type variables
 		)
-        jvmTarget = "11" // 1.8 or above
+        jvmTarget = "17" // 1.8 or above
         javaParameters = true // Get correct parameter names in jqwik reporting
     }
 }
 
 tasks.withType<Wrapper> {
-    gradleVersion = "7.6"
+    gradleVersion = "8.4"
 }
