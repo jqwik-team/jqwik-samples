@@ -62,3 +62,4 @@ and JUnit 5 Jupiter in a single Maven project.
 [jqwik-spring-boot-gradle]: jqwik-spring-boot-gradle
 [jqwik-micronaut-gradle]: jqwik-micronaut-gradle
 [jqwik-micronaut-maven]: jqwik-micronaut-maven
+
