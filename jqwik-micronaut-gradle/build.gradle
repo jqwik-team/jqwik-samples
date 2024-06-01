@@ -35,7 +35,7 @@ micronaut {
 }
 
 wrapper {
-    gradleVersion = '8.2'
+    gradleVersion = '8.7'
 }
 
 
