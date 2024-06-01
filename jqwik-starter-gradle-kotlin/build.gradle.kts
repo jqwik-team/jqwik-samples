@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.9.10"
+    kotlin("jvm") version "1.9.24"
 }
 
 repositories {
@@ -13,8 +13,8 @@ repositories {
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
 
-    testImplementation("net.jqwik:jqwik:1.8.2")
-    testImplementation("net.jqwik:jqwik-kotlin:1.8.2")
+    testImplementation("net.jqwik:jqwik:1.8.5")
+    testImplementation("net.jqwik:jqwik-kotlin:1.8.5")
     testImplementation("org.assertj:assertj-core:3.24.2")
 
     // Optional but recommended to get annotation related API warnings, e.g. for @CheckReturnValue
@@ -43,5 +43,5 @@ tasks.withType<KotlinCompile> {
 }
 
 tasks.withType<Wrapper> {
-    gradleVersion = "8.4"
+    gradleVersion = "8.7"
 }
